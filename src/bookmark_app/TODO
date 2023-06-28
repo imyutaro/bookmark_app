@@ -1,0 +1,15 @@
+TODO
+---
+- can use from phone and pc
+  - other platform is userful?
+    - ex) share url from anywhere to slack bot and then post url from slack to myapp.
+  - need authentification?  (if can use other platform somehow, this doesn't need)
+  - need server?            (if can use other platform somehow, this doesn't need)
+- search engine
+  - Meilisearch v.s. ElasticSearch
+- pass url and store db(first using duckdb and later proper db for WebAPI)
+- auto tagging
+- search text from stored url docs
+- vector search
+- store summarized web page using LLM
+

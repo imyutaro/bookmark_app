@@ -1,0 +1,31 @@
+MEMO
+---
+- Meilisearch
+  - Example
+    - https://voluntas.medium.com/%E3%82%AA%E3%83%B3%E3%83%A9%E3%82%A4%E3%83%B3%E3%83%89%E3%82%AD%E3%83%A5%E3%83%A1%E3%83%B3%E3%83%88%E3%81%A8%E6%97%A5%E6%9C%AC%E8%AA%9E%E5%85%A8%E6%96%87%E6%A4%9C%E7%B4%A2-30cc38d7b1c3
+    - https://zenn.dev/voluntas/scraps/77ae77d06deadc
+  - vector search
+    - https://github.com/meilisearch/product/discussions/621#discussioncomment-6183647
+
+Meilisearch
+---
+Installation: https://www.meilisearch.com/docs/learn/getting_started/installation
+Quick Start: https://www.meilisearch.com/docs/learn/getting_started/quick_start
+
+```
+podman run -it --rm \
+    -p 7700:7700 \
+    -e MEILI_ENV='development' \
+    -v $(pwd)/meili_data \
+    getmeili/meilisearch:v1.2
+```
+
+MeiliSearchはデフォルトでデータを収集している。
+- https://www.meilisearch.com/docs/learn/what_is_meilisearch/telemetry
+
+以下のコマンドで収集しないように設定できる。
+```
+meilisearch --no-analytics
+```
+
+
